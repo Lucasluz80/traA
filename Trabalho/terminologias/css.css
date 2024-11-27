@@ -1,0 +1,6 @@
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante que o botão e o texto estejam separados */
+  }

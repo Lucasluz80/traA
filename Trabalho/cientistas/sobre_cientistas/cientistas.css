@@ -1,0 +1,126 @@
+/* Definindo cores principais */
+:root {
+    --primary-color: #007531;
+    --secondary-color: #263238;
+    --accent-color: #00bcd4;
+    --background-color: #f5f5f5;
+    --text-color: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout de duas colunas para conteúdo principal */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.content-text {
+    width: 45%; /* Ajustando a largura do texto */
+    padding: 20px;
+}
+
+.content-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.content-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--secondary-color);
+}
+
+/* Estilo da imagem */
+.content-image {
+    width: 50%; /* Tamanho fixo da coluna da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-image img {
+    width: 95%; /* Define a largura máxima da imagem para ocupar quase toda a área */
+    height: auto; /* Ajuste de altura automático */
+    border-radius: 10px;
+    object-fit: cover; /* Garante que a imagem sempre cubra o espaço sem distorções */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão de ação */
+button.button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+button.button:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-5px);
+}
+
+/* Título animado */
+h1.sobre {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    color: var(--primary-color);
+    text-shadow: 2px 2px #ddd;
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}

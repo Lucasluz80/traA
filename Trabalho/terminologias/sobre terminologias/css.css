@@ -1,0 +1,57 @@
+h1.sobre {
+    font-size: 3rem;
+    color: #4b0082;
+    text-shadow: 2px 2px #ddd;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1.sobrep {
+    font-size: 2rem;
+    color: #6a5acd;
+    margin-bottom: 20px;
+}
+
+p.pt {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+p.pt:hover {
+    transform: scale(1.02);
+}
+
+button.button {
+    background-color: #6a5acd;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.button:hover {
+    background-color: #4b0082;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
